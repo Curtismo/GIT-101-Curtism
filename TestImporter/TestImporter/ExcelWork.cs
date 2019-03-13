@@ -32,8 +32,9 @@ namespace TestImporter
 
 		internal static string GetDescrition(int currentRow, Microsoft.Office.Interop.Excel.Application excel, string path)
 		{
-			throw new NotImplementedException();
-		}
+            string title = GetExcelValue(currentRow, 5, excel, path);
+            return title;
+        }
 
 		internal static string GetParamFileName(int currentRow, Microsoft.Office.Interop.Excel.Application excel, string path)
 		{
